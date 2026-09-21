@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Karteria</title>
+<link rel="icon" href="assets/brand-mark.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="page">
+  <a class="brand" href="index.html">
+    <img class="brand-mark" src="assets/brand-mark.svg" alt="">
+    <span class="brand-name">Karteria</span>
+  </a>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: September 21, 2026</p>
+  <div class="lang-switch"><a href="privacy-policy-it.html">Leggi in italiano</a></div>
+
+  <p>Karteria ("the app") is developed by Valerio Schips ("the developer",
+  "we"). This policy describes what data Karteria reads, how it is used,
+  and how you can control it.</p>
+
+  <h2>1. The principle behind Karteria</h2>
+  <p>Karteria has no server of its own, no user account, and does not send
+  your data to any external service. All data read from Apple Health stays
+  exclusively on your device, in a local database created and managed by
+  the app. The developer has no access to any of your data: there is no
+  backend that receives it.</p>
+
+  <h2>2. Data read from Apple Health (HealthKit)</h2>
+  <p>With your permission, Karteria reads the following data types from
+  Apple Health, used exclusively to calculate and display the Overview,
+  Runs, Compare, and Sleep screens and their related charts:</p>
+  <ul>
+    <li><strong>Workouts</strong>: your recorded runs (<code>HKWorkout</code>), including statistics,
+      events (pauses, resumes, splits) and metadata (indoor/outdoor workout,
+      weather conditions, elevation, duration, time zone, device used).</li>
+    <li><strong>GPS routes</strong>: the GPS track of your recorded runs.</li>
+    <li><strong>Heart rate and cardio metrics</strong>: heart rate, heart rate recovery,
+      heart rate variability (SDNN), resting heart rate, blood oxygen
+      saturation, VO2Max.</li>
+    <li><strong>Running metrics</strong>: running power, speed, stride length, ground
+      contact time, vertical oscillation, cadence.</li>
+    <li><strong>Walking metrics</strong>: speed, step length, average heart rate, asymmetry
+      and double support percentage while walking.</li>
+    <li><strong>Energy and activity</strong>: active and basal energy burned, exercise time,
+      stand time, flights climbed, step count, walking steadiness.</li>
+    <li><strong>Sleep</strong>: sleep stages (in bed, awake, light sleep, deep sleep, REM).</li>
+    <li><strong>Other data</strong>: audio exposure (environmental/headphones), mindfulness
+      sessions, time in daylight, distance covered (running, cycling,
+      swimming, walking), swimming stroke count.</li>
+    <li><strong>Personal characteristics</strong>: date of birth, biological sex, blood
+      type, skin (Fitzpatrick) type, cardiometabolic medication use — used
+      only when required by a specific calculation shown in the app.</li>
+  </ul>
+  <p>Karteria <strong>reads</strong> this data; it does not modify or delete it in Apple
+  Health.</p>
+
+  <h2>3. Data written to Apple Health</h2>
+  <p>The Apple Watch companion records your run live (heart rate, pace, GPS
+  route) and, when you finish the workout, saves it to Apple Health as an
+  <code>HKWorkout</code> — the same way Apple's own Workout app would. This write only
+  happens for runs you actively record from the Watch, with your direct
+  interaction (starting/stopping the workout).</p>
+
+  <h2>4. Location</h2>
+  <ul>
+    <li><strong>On the Watch</strong>, during an active workout, GPS location is used to
+      record the run's route (saved to Apple Health, see §3). Karteria does
+      not use location for any other purpose, and does not track it outside
+      an active workout.</li>
+    <li><strong>On iPhone</strong>, in the Compare screen, the app uses Apple's own
+      geocoding service (not a service run by the developer) to translate
+      the starting GPS coordinates of an already-recorded run into a
+      readable place name (e.g. "Milan"). This request only uses
+      coordinates already stored with the run: it does not request or read
+      the device's current location, and does not save location anywhere
+      outside the app's local database.</li>
+    <li>Maps shown in the app (run routes) use Apple MapKit, an Apple system
+      service.</li>
+  </ul>
+
+  <h2>5. What we do NOT do</h2>
+  <div class="card">
+    <ul>
+      <li>We do not collect, transmit, or sell your data to third parties.</li>
+      <li>We do not use your data for advertising, marketing, or profiling.</li>
+      <li>We do not use your data to train AI models.</li>
+      <li>We have no user account, so we do not collect email, name, or other
+        identifying data through the app.</li>
+      <li>We do not use third-party analytics or tracking tools.</li>
+      <li>We do not sync your data to iCloud or any other cloud: it stays on
+        the device where the app is installed.</li>
+    </ul>
+  </div>
+
+  <h2>6. Data retention and deletion</h2>
+  <p>Data read from Apple Health is copied into a local database used by the
+  app, so charts can be built quickly without querying Apple Health every
+  time. You can delete this local copy at any time from the app's Settings
+  screen. Deleting the app from your device also deletes this local copy.</p>
+  <p>The original data still lives in Apple Health, under your control via
+  Apple's Health app: from there you can revoke Karteria's access to one or
+  more data types at any time (Health → your profile → Apps and Devices →
+  Karteria).</p>
+
+  <h2>7. Medical device</h2>
+  <p>Karteria is not a medical device and does not provide diagnoses, medical
+  advice, or treatment recommendations. The data and metrics shown are for
+  informational and personal fitness-tracking purposes only.</p>
+
+  <h2>8. Children</h2>
+  <p>Karteria is not directed at children under 13 and does not knowingly
+  collect data from children under 13.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If this policy changes in a material way, we will update the date at
+  the top of the page and, if the change affects how data is used, we will
+  also note it in the app's release notes.</p>
+
+  <h2>10. Contact</h2>
+  <p class="contact">For questions about this policy: <a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></p>
+
+  <footer>
+    &copy; 2026 Valerio Schips — Karteria · <a href="index.html">Home</a> · <a href="support.html">Support</a>
+  </footer>
+</div>
+</body>
+</html>

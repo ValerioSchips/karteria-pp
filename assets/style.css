@@ -1,0 +1,206 @@
+:root {
+  --surface: #FCFCFB;
+  --surface-2: #ECEFF1;
+  --ink: #0D1114;
+  --ink-muted: #868F95;
+  --grid: #E2E5E6;
+  --axis: #C2C7CA;
+  --blue: #2A78D6;
+  --orange: #EB6834;
+  --green: #1BAF7A;
+  --max-width: 720px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface: #1A1C1D;
+    --surface-2: #232628;
+    --ink: #F2F5F6;
+    --ink-muted: #7D868C;
+    --grid: #2C2F31;
+    --axis: #3D4143;
+    --blue: #3987E5;
+    --orange: #D95926;
+    --green: #199E70;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--surface);
+  color: var(--ink);
+}
+
+body {
+  font-family: ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 48px 20px 96px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 6px;
+}
+
+h2 {
+  font-size: 19px;
+  font-weight: 700;
+  margin: 36px 0 10px;
+  padding-top: 20px;
+  border-top: 1px solid var(--grid);
+}
+
+h2:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+p, li {
+  color: var(--ink);
+}
+
+.meta {
+  color: var(--ink-muted);
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.lang-switch {
+  margin: 0 0 32px;
+}
+
+.lang-switch a {
+  color: var(--ink-muted);
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid var(--axis);
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+
+.lang-switch a:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+code {
+  background: var(--surface-2);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.92em;
+}
+
+.card {
+  background: var(--surface-2);
+  border-radius: 16px;
+  padding: 20px 22px;
+  margin: 18px 0;
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.contact {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.contact a {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-weight: 600;
+}
+
+.index-links {
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.index-link {
+  display: block;
+  background: var(--surface-2);
+  border-radius: 14px;
+  padding: 16px 18px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.index-link:hover {
+  outline: 2px solid var(--blue);
+}
+
+.index-link .title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.index-link .sub {
+  color: var(--ink-muted);
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--grid);
+  color: var(--ink-muted);
+  font-size: 13px;
+}

@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Informativa sulla privacy — Karteria</title>
+<link rel="icon" href="assets/brand-mark.svg">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="page">
+  <a class="brand" href="index.html">
+    <img class="brand-mark" src="assets/brand-mark.svg" alt="">
+    <span class="brand-name">Karteria</span>
+  </a>
+
+  <h1>Informativa sulla privacy</h1>
+  <p class="meta">Ultimo aggiornamento: 21 settembre 2026</p>
+  <div class="lang-switch"><a href="privacy-policy.html">Read in English</a></div>
+
+  <p>Karteria ("l'app") è sviluppata da Valerio Schips ("il developer",
+  "noi"). Questa informativa descrive quali dati Karteria legge, come li
+  usa e come puoi controllarli.</p>
+
+  <h2>1. Il principio alla base di Karteria</h2>
+  <p>Karteria non ha un server proprio, non ha un account utente e non
+  invia i tuoi dati a nessun servizio esterno. Tutti i dati letti da Apple
+  Salute restano esclusivamente sul tuo dispositivo, in un database locale
+  creato e gestito dall'app. Il developer non ha accesso a nessuno dei tuoi
+  dati: non esiste un backend che li riceva.</p>
+
+  <h2>2. Dati letti da Apple Salute (HealthKit)</h2>
+  <p>Con il tuo permesso, Karteria legge da Apple Salute i seguenti tipi di
+  dato, usati esclusivamente per calcolare e mostrare le schermate
+  Panoramica, Corse, Confronto e Sonno e i grafici correlati:</p>
+  <ul>
+    <li><strong>Allenamenti</strong>: le tue corse registrate (<code>HKWorkout</code>), incluse
+      statistiche, eventi (pause, riprese, split) e metadati (allenamento
+      indoor/outdoor, condizioni meteo, elevazione, durata, fuso orario,
+      dispositivo usato).</li>
+    <li><strong>Percorsi GPS</strong>: il tracciato GPS delle corse registrate.</li>
+    <li><strong>Frequenza cardiaca e metriche cardio</strong>: frequenza cardiaca, recupero
+      della frequenza cardiaca, variabilità della frequenza cardiaca (SDNN),
+      frequenza cardiaca a riposo, saturazione di ossigeno, VO2Max.</li>
+    <li><strong>Metriche di corsa</strong>: potenza di corsa, velocità, lunghezza del passo,
+      tempo di contatto al suolo, oscillazione verticale, cadenza.</li>
+    <li><strong>Metriche di camminata</strong>: velocità, lunghezza del passo, frequenza
+      cardiaca media, asimmetria e doppio supporto durante la camminata.</li>
+    <li><strong>Energia e attività</strong>: calorie attive e basali bruciate, tempo di
+      esercizio, tempo in piedi, piani saliti, conteggio passi, stabilità
+      del passo.</li>
+    <li><strong>Sonno</strong>: fasi del sonno (a letto, sveglio, sonno leggero, profondo, REM).</li>
+    <li><strong>Altri dati</strong>: esposizione audio (ambientale/cuffie), sessioni di
+      mindfulness, tempo alla luce diurna, distanza percorsa (corsa,
+      ciclismo, nuoto, camminata), bracciate nuoto.</li>
+    <li><strong>Caratteristiche personali</strong>: data di nascita, sesso biologico, gruppo
+      sanguigno, fototipo cutaneo, uso di farmaci cardiometabolici — usati
+      solo se necessari a calcoli specifici mostrati nell'app.</li>
+  </ul>
+  <p>Karteria <strong>legge</strong> questi dati; non li modifica né li elimina da Apple
+  Salute.</p>
+
+  <h2>3. Dati scritti su Apple Salute</h2>
+  <p>Il companion per Apple Watch registra le tue corse dal vivo (frequenza
+  cardiaca, passo, percorso GPS) e, al termine dell'allenamento, la salva
+  in Apple Salute come <code>HKWorkout</code> — esattamente come farebbe l'app
+  Allenamento di Apple. Questa scrittura avviene solo per le corse che
+  registri attivamente dal Watch, con la tua interazione diretta
+  (avvio/stop dell'allenamento).</p>
+
+  <h2>4. Posizione geografica</h2>
+  <ul>
+    <li><strong>Sul Watch</strong>, durante un allenamento attivo, la posizione GPS viene
+      usata per registrare il percorso della corsa (salvato in Apple
+      Salute, vedi §3). Karteria non usa la posizione per nessun altro
+      scopo, né la traccia fuori da un allenamento attivo.</li>
+    <li><strong>Su iPhone</strong>, nella schermata Confronto, l'app usa il servizio di
+      geocoding di Apple (non un servizio del developer) per tradurre le
+      coordinate GPS di partenza di una corsa già registrata in un nome di
+      luogo leggibile (es. "Milano"). Questa richiesta usa solo le
+      coordinate già presenti nella corsa: non richiede né legge la
+      posizione attuale del dispositivo, e non salva la posizione da
+      nessuna parte fuori dal database locale dell'app.</li>
+    <li>Le mappe mostrate nell'app (percorsi delle corse) usano Apple
+      MapKit, un servizio di sistema Apple.</li>
+  </ul>
+
+  <h2>5. Cosa NON facciamo</h2>
+  <div class="card">
+    <ul>
+      <li>Non raccogliamo, non trasmettiamo e non vendiamo i tuoi dati a terzi.</li>
+      <li>Non usiamo i tuoi dati per pubblicità, marketing o profilazione.</li>
+      <li>Non usiamo i tuoi dati per addestrare modelli di intelligenza artificiale.</li>
+      <li>Non abbiamo un account utente, quindi non raccogliamo email, nome o
+        altri dati identificativi tramite l'app.</li>
+      <li>Non usiamo strumenti di analytics o tracciamento di terze parti.</li>
+      <li>Non sincronizziamo i tuoi dati su iCloud o su nessun altro cloud:
+        restano sul dispositivo su cui l'app è installata.</li>
+    </ul>
+  </div>
+
+  <h2>6. Conservazione ed eliminazione dei dati</h2>
+  <p>I dati letti da Apple Salute vengono copiati in un database locale
+  sull'app, usato per costruire rapidamente i grafici senza dover
+  interrogare Apple Salute ogni volta. Puoi eliminare questa copia locale
+  in qualsiasi momento dalla schermata Impostazioni dell'app. Eliminare
+  l'app dal dispositivo elimina anche questa copia locale.</p>
+  <p>I dati originali restano comunque in Apple Salute, sotto il tuo
+  controllo tramite l'app Salute di Apple: da lì puoi in qualsiasi momento
+  revocare l'accesso di Karteria a uno o più tipi di dato (Salute → il tuo
+  profilo → Accesso app e dispositivi → Karteria).</p>
+
+  <h2>7. Dispositivo medico</h2>
+  <p>Karteria non è un dispositivo medico e non fornisce diagnosi, consigli
+  medici o indicazioni terapeutiche. I dati e le metriche mostrati sono a
+  scopo puramente informativo e di monitoraggio personale dell'attività
+  fisica.</p>
+
+  <h2>8. Minori</h2>
+  <p>Karteria non è indirizzata a minori di 13 anni e non raccoglie
+  consapevolmente dati di minori di 13 anni.</p>
+
+  <h2>9. Modifiche a questa informativa</h2>
+  <p>Se questa informativa cambia in modo sostanziale, aggiorneremo la data
+  in cima alla pagina e, se il cambiamento riguarda come i dati vengono
+  usati, lo segnaleremo anche nelle note di rilascio dell'app.</p>
+
+  <h2>10. Contatti</h2>
+  <p class="contact">Per domande su questa informativa: <a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></p>
+
+  <footer>
+    &copy; 2026 Valerio Schips — Karteria · <a href="index.html">Home</a> · <a href="support-it.html">Assistenza</a>
+  </footer>
+</div>
+</body>
+</html>
