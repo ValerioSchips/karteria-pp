@@ -4,129 +4,99 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Informativa sulla privacy — Karteria</title>
-<link rel="icon" href="assets/brand-mark.svg">
+<link rel="icon" type="image/png" href="assets/app-icon.png">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <div class="page">
   <a class="brand" href="index.html">
-    <img class="brand-mark" src="assets/brand-mark.svg" alt="">
+    <img class="brand-mark" src="assets/app-icon.png" alt="">
     <span class="brand-name">Karteria</span>
   </a>
 
-  <h1>Informativa sulla privacy</h1>
-  <p class="meta">Ultimo aggiornamento: 21 settembre 2026</p>
+  <h1>Informativa sulla privacy di Karteria</h1>
+  <p class="meta">Ultimo aggiornamento: 27 settembre 2026</p>
   <div class="lang-switch"><a href="privacy-policy.html">Read in English</a></div>
 
-  <p>Karteria ("l'app") è sviluppata da Valerio Schips ("il developer",
-  "noi"). Questa informativa descrive quali dati Karteria legge, come li
-  usa e come puoi controllarli.</p>
-
-  <h2>1. Il principio alla base di Karteria</h2>
-  <p>Karteria non ha un server proprio, non ha un account utente e non
-  invia i tuoi dati a nessun servizio esterno. Tutti i dati letti da Apple
-  Salute restano esclusivamente sul tuo dispositivo, in un database locale
-  creato e gestito dall'app. Il developer non ha accesso a nessuno dei tuoi
-  dati: non esiste un backend che li riceva.</p>
-
-  <h2>2. Dati letti da Apple Salute (HealthKit)</h2>
-  <p>Con il tuo permesso, Karteria legge da Apple Salute i seguenti tipi di
-  dato, usati esclusivamente per calcolare e mostrare le schermate
-  Panoramica, Corse, Confronto e Sonno e i grafici correlati:</p>
+  <p>Karteria ("l'app") è un'app per iPhone con un'app companion per Apple Watch, sviluppata da Valerio Schips ("lo sviluppatore", "noi"). Questa informativa spiega quali dati usa l'app, dove sono conservati, quando (e solo quando) qualcuno di questi arriva allo sviluppatore o a terzi, e quali diritti hai.</p>
+  <h2>1. In breve</h2>
   <ul>
-    <li><strong>Allenamenti</strong>: le tue corse registrate (<code>HKWorkout</code>), incluse
-      statistiche, eventi (pause, riprese, split) e metadati (allenamento
-      indoor/outdoor, condizioni meteo, elevazione, durata, fuso orario,
-      dispositivo usato).</li>
-    <li><strong>Percorsi GPS</strong>: il tracciato GPS delle corse registrate.</li>
-    <li><strong>Frequenza cardiaca e metriche cardio</strong>: frequenza cardiaca, recupero
-      della frequenza cardiaca, variabilità della frequenza cardiaca (SDNN),
-      frequenza cardiaca a riposo, saturazione di ossigeno, VO2Max.</li>
-    <li><strong>Metriche di corsa</strong>: potenza di corsa, velocità, lunghezza del passo,
-      tempo di contatto al suolo, oscillazione verticale, cadenza.</li>
-    <li><strong>Metriche di camminata</strong>: velocità, lunghezza del passo, frequenza
-      cardiaca media, asimmetria e doppio supporto durante la camminata.</li>
-    <li><strong>Energia e attività</strong>: calorie attive e basali bruciate, tempo di
-      esercizio, tempo in piedi, piani saliti, conteggio passi, stabilità
-      del passo.</li>
-    <li><strong>Sonno</strong>: fasi del sonno (a letto, sveglio, sonno leggero, profondo, REM).</li>
-    <li><strong>Altri dati</strong>: esposizione audio (ambientale/cuffie), sessioni di
-      mindfulness, tempo alla luce diurna, distanza percorsa (corsa,
-      ciclismo, nuoto, camminata), bracciate nuoto.</li>
-    <li><strong>Caratteristiche personali</strong>: data di nascita, sesso biologico, gruppo
-      sanguigno, fototipo cutaneo, uso di farmaci cardiometabolici — usati
-      solo se necessari a calcoli specifici mostrati nell'app.</li>
+    <li>Karteria non ha un server, un account utente, pubblicità, analytics né SDK di tracciamento di terze parti.</li>
+    <li>I tuoi dati di Salute vengono letti ed elaborati <strong>solo sul tuo iPhone e sul tuo Apple Watch</strong>. Lo sviluppatore non li riceve mai, salvo nell'unico caso che avvii tu: l'invio di un export dei dati all'assistenza (§7).</li>
+    <li>Due funzioni usano servizi Apple che contattano i server di Apple: nomi dei luoghi e mappe (§5). Karteria non sincronizza i tuoi dati con iCloud: l'unica copia fuori dall'iPhone è il normale backup del dispositivo (iCloud o computer), se lo hai attivo (§8).</li>
   </ul>
-  <p>Karteria <strong>legge</strong> questi dati; non li modifica né li elimina da Apple
-  Salute.</p>
-
-  <h2>3. Dati scritti su Apple Salute</h2>
-  <p>Il companion per Apple Watch registra le tue corse dal vivo (frequenza
-  cardiaca, passo, percorso GPS) e, al termine dell'allenamento, la salva
-  in Apple Salute come <code>HKWorkout</code> — esattamente come farebbe l'app
-  Allenamento di Apple. Questa scrittura avviene solo per le corse che
-  registri attivamente dal Watch, con la tua interazione diretta
-  (avvio/stop dell'allenamento).</p>
-
-  <h2>4. Posizione geografica</h2>
+  <h2>2. Chi è responsabile</h2>
+  <p>Lo sviluppatore, Valerio Schips (Italia), è titolare del trattamento dei dati personali che riceve direttamente: le email di assistenza e gli export dei dati che scegli di inviargli (§7). Contatto: <strong><a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></strong>.</p>
+  <p>I dati che restano sui tuoi dispositivi (§3–§6) sono elaborati dall'app sotto il tuo controllo. Lo sviluppatore non vi ha accesso e non può leggerli, copiarli o cancellarli.</p>
+  <h2>3. Dati letti da Apple Salute (HealthKit), su iPhone</h2>
+  <p>Con il tuo permesso, dato tramite la finestra di sistema di Apple, l'app per iPhone legge da Apple Salute i tipi di dato seguenti. Sono usati solo per calcolare e mostrare le schermate Panoramica, Corse, Confronto e Sonno e i relativi grafici.</p>
   <ul>
-    <li><strong>Sul Watch</strong>, durante un allenamento attivo, la posizione GPS viene
-      usata per registrare il percorso della corsa (salvato in Apple
-      Salute, vedi §3). Karteria non usa la posizione per nessun altro
-      scopo, né la traccia fuori da un allenamento attivo.</li>
-    <li><strong>Su iPhone</strong>, nella schermata Confronto, l'app usa il servizio di
-      geocoding di Apple (non un servizio del developer) per tradurre le
-      coordinate GPS di partenza di una corsa già registrata in un nome di
-      luogo leggibile (es. "Milano"). Questa richiesta usa solo le
-      coordinate già presenti nella corsa: non richiede né legge la
-      posizione attuale del dispositivo, e non salva la posizione da
-      nessuna parte fuori dal database locale dell'app.</li>
-    <li>Le mappe mostrate nell'app (percorsi delle corse) usano Apple
-      MapKit, un servizio di sistema Apple.</li>
+    <li><strong>Allenamenti</strong>: i tuoi allenamenti (<code>HKWorkout</code>) con statistiche, eventi (pause, riprese, soste automatiche, segmenti) e metadati (indoor/outdoor, meteo, dislivello, fuso orario, dispositivo di registrazione), più i riepiloghi giornalieri degli anelli Attività.</li>
+    <li><strong>Percorsi GPS</strong> degli allenamenti.</li>
+    <li><strong>Cuore e respiro</strong>: frequenza cardiaca, frequenza cardiaca a riposo, media della frequenza cardiaca in camminata, variabilità della frequenza cardiaca (SDNN), recupero della frequenza cardiaca, frequenza respiratoria, saturazione di ossigeno, VO2 max.</li>
+    <li><strong>Corsa</strong>: potenza di corsa, velocità, lunghezza della falcata, tempo di contatto al suolo, oscillazione verticale.</li>
+    <li><strong>Camminata e mobilità</strong>: velocità e lunghezza del passo in camminata, asimmetria, doppio appoggio, stabilità del passo, distanza del test del cammino di sei minuti, velocità in salita e discesa delle scale.</li>
+    <li><strong>Energia e attività</strong>: energia attiva e a riposo, minuti di esercizio, tempo e ore in piedi, sforzo fisico, piani saliti, passi, distanza (camminata/corsa, bicicletta, nuoto), bracciate.</li>
+    <li><strong>Sonno</strong>: fasi del sonno (a letto, sveglio, sonno principale, profondo, REM).</li>
+    <li><strong>Altro</strong>: livelli ed eventi di esposizione audio (ambiente e cuffie), sessioni di consapevolezza, tempo alla luce del giorno.</li>
+    <li><strong>Caratteristiche personali</strong>: data di nascita, sesso biologico, gruppo sanguigno, fototipo cutaneo (Fitzpatrick), uso di farmaci che influenzano la capacità cardiorespiratoria. La data di nascita serve a stimare le zone di frequenza cardiaca. Gli altri dati vengono conservati insieme ai tuoi dati, ma oggi nessun calcolo mostrato dall'app li usa.</li>
   </ul>
-
-  <h2>5. Cosa NON facciamo</h2>
-  <div class="card">
-    <ul>
-      <li>Non raccogliamo, non trasmettiamo e non vendiamo i tuoi dati a terzi.</li>
-      <li>Non usiamo i tuoi dati per pubblicità, marketing o profilazione.</li>
-      <li>Non usiamo i tuoi dati per addestrare modelli di intelligenza artificiale.</li>
-      <li>Non abbiamo un account utente, quindi non raccogliamo email, nome o
-        altri dati identificativi tramite l'app.</li>
-      <li>Non usiamo strumenti di analytics o tracciamento di terze parti.</li>
-      <li>Non sincronizziamo i tuoi dati su iCloud o su nessun altro cloud:
-        restano sul dispositivo su cui l'app è installata.</li>
-    </ul>
-  </div>
-
-  <h2>6. Conservazione ed eliminazione dei dati</h2>
-  <p>I dati letti da Apple Salute vengono copiati in un database locale
-  sull'app, usato per costruire rapidamente i grafici senza dover
-  interrogare Apple Salute ogni volta. Puoi eliminare questa copia locale
-  in qualsiasi momento dalla schermata Impostazioni dell'app. Eliminare
-  l'app dal dispositivo elimina anche questa copia locale.</p>
-  <p>I dati originali restano comunque in Apple Salute, sotto il tuo
-  controllo tramite l'app Salute di Apple: da lì puoi in qualsiasi momento
-  revocare l'accesso di Karteria a uno o più tipi di dato (Salute → il tuo
-  profilo → Accesso app e dispositivi → Karteria).</p>
-
-  <h2>7. Dispositivo medico</h2>
-  <p>Karteria non è un dispositivo medico e non fornisce diagnosi, consigli
-  medici o indicazioni terapeutiche. I dati e le metriche mostrati sono a
-  scopo puramente informativo e di monitoraggio personale dell'attività
-  fisica.</p>
-
-  <h2>8. Minori</h2>
-  <p>Karteria non è indirizzata a minori di 13 anni e non raccoglie
-  consapevolmente dati di minori di 13 anni.</p>
-
-  <h2>9. Modifiche a questa informativa</h2>
-  <p>Se questa informativa cambia in modo sostanziale, aggiorneremo la data
-  in cima alla pagina e, se il cambiamento riguarda come i dati vengono
-  usati, lo segnaleremo anche nelle note di rilascio dell'app.</p>
-
-  <h2>10. Contatti</h2>
-  <p class="contact">Per domande su questa informativa: <a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></p>
+  <p>Quando in Apple Salute arrivano dati nuovi (per esempio a fine corsa o dopo una notte), l'app può leggerli in background per tenere aggiornati i grafici. L'app per iPhone non modifica e non cancella nulla in Apple Salute.</p>
+  <h2>4. App companion per Apple Watch</h2>
+  <p>Durante una corsa avviata dal Watch, l'app companion:</p>
+  <ul>
+    <li><strong>legge</strong> frequenza cardiaca, distanza, energia, metriche di corsa (velocità, potenza, falcata, passi) e la tua data di nascita (per le zone di frequenza cardiaca);</li>
+    <li>usa la <strong>posizione GPS</strong>, solo mentre l'allenamento è in corso, per registrare il percorso e misurare il passo;</li>
+    <li>usa l'<strong>altimetro barometrico</strong> (permesso Movimento e fitness), solo mentre l'allenamento è in corso, per mostrare il dislivello positivo. Questo valore è mostrato dal vivo e non viene salvato;</li>
+    <li>a fine corsa <strong>scrive in Apple Salute</strong>: l'allenamento, il suo percorso GPS, gli eventi (pause, riprese, segmenti) e metadati tecnici (numero di segmento, un riepilogo della ricezione GPS, per esempio quanti punti GPS sono arrivati, e un'indicazione se la corsa è stata recuperata dopo un'interruzione);</li>
+    <li>se il salvataggio si interrompe (per esempio perché il sistema chiude l'app), tiene sul Watch un <strong>file di recupero</strong> con l'avanzamento della corsa e i punti GPS. Lo usa per ricostruire e salvare la corsa, poi lo <strong>cancella</strong>. Quando ricostruisce una corsa, collega all'allenamento i campioni di frequenza cardiaca, distanza, energia, velocità, potenza, falcata e passi che il Watch aveva già registrato in Apple Salute. Per questo il Watch chiede il permesso di scrittura su quei tipi. Non crea mai valori nuovi.</li>
+  </ul>
+  <p>Karteria non usa la posizione fuori da un allenamento attivo sul Watch, e l'app per iPhone non chiede mai la tua posizione attuale.</p>
+  <p><strong>iPhone ↔ Watch.</strong> Le due app si scambiano dati direttamente tra i tuoi dispositivi tramite WatchConnectivity di Apple: valori di riferimento della frequenza cardiaca, programma settimanale e metriche che hai scelto di vedere sul Watch (iPhone → Watch), brevi annunci vocali di chilometri e ripetute (Watch → iPhone). Nulla passa dallo sviluppatore.</p>
+  <h2>5. Servizi Apple che contattano i server di Apple</h2>
+  <ul>
+    <li><strong>Nomi dei luoghi (iPhone).</strong> Per mostrare il nome leggibile di un luogo (per esempio "Milano") per una corsa, l'app invia le <strong>coordinate di partenza</strong> della corsa al servizio di geocodifica di Apple. Sono inviate solo le coordinate, senza altri dati di Salute. Il risultato è conservato solo nel database locale dell'app.</li>
+    <li><strong>Mappe (iPhone).</strong> I percorsi sono disegnati su Mappe di Apple (MapKit), che scarica le porzioni di mappa dell'area mostrata.</li>
+  </ul>
+  <p>Apple gestisce queste richieste secondo la propria <a href="https://www.apple.com/it/legal/privacy/">informativa sulla privacy</a>. Lo sviluppatore non ne riceve nulla.</p>
+  <h2>6. Dati che inserisci nell'app</h2>
+  <p>Le tue scarpe (nome, data di acquisto, chilometraggi, corse che vi associ), le <strong>foto</strong> delle scarpe, il programma settimanale e le impostazioni dell'app. Le foto si scelgono con il selettore di foto di Apple: l'app riceve solo la foto che selezioni e non ha accesso al resto della libreria. Tutto questo resta sul tuo dispositivo.</p>
+  <h2>7. Quando i dati arrivano allo sviluppatore</h2>
+  <p>Solo nei casi seguenti, e ognuno parte da te.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Caso</th><th>Cosa riceve lo sviluppatore</th><th>Finalità e base giuridica</th><th>Per quanto tempo</th></tr></thead>
+    <tbody>
+      <tr><td>Scrivi all'assistenza</td><td>Il tuo indirizzo email, il messaggio ed eventuali allegati</td><td>Risponderti (GDPR art. 6(1)(b) e (f))</td><td>Fino alla chiusura della richiesta, poi cancellati entro 12 mesi al massimo</td></tr>
+      <tr><td>Invii un <strong>export dei dati</strong> (Impostazioni → "Condividi DB + diagnostica")</td><td>Una copia del database locale dell'app, <strong>che contiene i tuoi dati di Salute</strong>, e un riepilogo diagnostico</td><td>Solo per analizzare il problema che hai segnalato. Dai il tuo <strong>consenso esplicito</strong> (GDPR art. 9(2)(a)) scegliendo di inviarlo</td><td>Cancellati alla risoluzione del problema, e comunque entro 90 giorni dalla ricezione. Puoi chiederne la cancellazione anticipata in qualsiasi momento</td></tr>
+      <tr><td>Hai attivato <strong>"Condividi con gli sviluppatori"</strong> nelle impostazioni di iOS/watchOS, oppure sei un tester TestFlight</td><td>Report di crash e statistiche d'uso anonime raccolte e inoltrate da Apple, ed eventuale feedback TestFlight che invii</td><td>Correggere crash e migliorare la stabilità (tua scelta nelle impostazioni Apple; GDPR art. 6(1)(f))</td><td>Per il tempo in cui li conserva App Store Connect</td></tr>
+    </tbody>
+  </table></div>
+  <p>Le email di assistenza sono conservate presso il fornitore di posta dello sviluppatore (Microsoft Outlook/Hotmail), che può trattarle fuori dall'Unione europea in base all'EU–US Data Privacy Framework e alle clausole contrattuali tipo della Commissione europea.</p>
+  <p>I dati ricevuti dallo sviluppatore non vengono mai venduti, condivisi con terzi, usati per pubblicità o marketing, né per addestrare modelli di intelligenza artificiale.</p>
+  <h2>8. Dove sono conservati i dati e come cancellarli</h2>
+  <ul>
+    <li><strong>Database locale (iPhone).</strong> I dati di Salute letti dall'app vengono copiati in un database locale perché i grafici si carichino in fretta. È protetto dalla protezione dati di iOS e, come il resto dei dati dell'app, è <strong>incluso nei normali backup del dispositivo (iCloud o computer)</strong>, se li hai attivi: ripristinando un backup viene ripristinato anche lui, e senza backup l'app lo ricostruisce da Apple Salute. Impostazioni → "Resync completo" lo cancella e lo ricostruisce subito da Apple Salute. Per cancellarlo definitivamente, disinstalla l'app (una copia può restare nei backup fatti in precedenza, finché iOS non li sostituisce o li elimini tu).</li>
+    <li><strong>Scarpe, foto, programma, impostazioni</strong> sono inclusi nei normali backup del dispositivo (iCloud o computer), se li hai attivi. Disinstallare l'app li cancella dal dispositivo.</li>
+    <li><strong>File di recupero sul Watch</strong>: cancellato automaticamente quando la corsa è salvata, oppure disinstallando l'app dal Watch.</li>
+    <li><strong>Dati scritti in Apple Salute</strong> dal Watch (§4): appartengono ad Apple Salute, puoi vederli o cancellarli dall'app Salute.</li>
+    <li><strong>Revoca dell'accesso</strong>: nell'app Salute, il tuo profilo → App → Karteria, dove puoi disattivare ogni tipo di dato. I permessi Posizione e Movimento e fitness si cambiano sul Watch in Impostazioni → Privacy e sicurezza.</li>
+  </ul>
+  <h2>9. I tuoi diritti</h2>
+  <p>In base al GDPR (articoli 15–22) puoi chiedere allo sviluppatore l'accesso ai dati che conserva su di te (§7), la loro rettifica, cancellazione, limitazione o portabilità, e puoi opporti al loro trattamento. Puoi revocare il consenso in qualsiasi momento. La revoca non incide sul trattamento già avvenuto. Scrivi a <strong><a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></strong>: riceverai risposta entro un mese.</p>
+  <p>Per i dati che non lasciano mai i tuoi dispositivi (§3–§6) mantieni il pieno controllo direttamente, con le impostazioni descritte al §8.</p>
+  <p>Hai anche il diritto di proporre reclamo a un'autorità di controllo: in Italia il Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">garanteprivacy.it</a>), oppure l'autorità del Paese UE in cui vivi o lavori.</p>
+  <h2>10. Nessuna decisione automatizzata</h2>
+  <p>Punteggi e indicatori mostrati dall'app (per esempio il punteggio del sonno o il carico di allenamento) sono stime informative calcolate sul tuo dispositivo. Non producono decisioni con effetti giuridici o significativi analoghi (GDPR art. 22) e non sono usati per profilazione.</p>
+  <h2>11. Non è un dispositivo medico</h2>
+  <p>Karteria non è un dispositivo medico e non fornisce diagnosi, consigli medici o indicazioni terapeutiche. I dati e le metriche mostrati servono solo al monitoraggio personale dell'attività fisica e a scopo informativo. Rivolgiti a un medico prima di qualsiasi decisione sulla tua salute.</p>
+  <h2>12. Età</h2>
+  <p>Karteria non è destinata a persone con meno di 16 anni e lo sviluppatore non riceve consapevolmente loro dati. Se ritieni che una persona con meno di 16 anni abbia inviato dati allo sviluppatore, scrivi all'indirizzo qui sotto e verranno cancellati.</p>
+  <h2>13. Modifiche a questa informativa</h2>
+  <p>Quando questa informativa cambia, cambia la data "Ultimo aggiornamento" in cima. Se una modifica riguarda l'uso o la condivisione dei dati, viene annunciata anche nelle note di rilascio dell'app prima che entri in vigore.</p>
+  <h2>14. Lingua</h2>
+  <p>Questa informativa è disponibile in italiano e in inglese. In caso di differenze tra le due versioni, prevale quella italiana.</p>
+  <h2>15. Contatti</h2>
+  <p>Per qualsiasi domanda su questa informativa o sui tuoi dati: <strong><a href="mailto:noserv_report@hotmail.com">noserv_report@hotmail.com</a></strong></p>
 
   <footer>
     &copy; 2026 Valerio Schips — Karteria · <a href="index.html">Home</a> · <a href="support-it.html">Assistenza</a>
